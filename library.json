@@ -1,0 +1,21 @@
+{
+    "name": "CrudusConnect",
+    "version": "1.0.0",
+    "description": "Helper file for OTA update and Blynk connect",
+    "keywords": "ota, connect, blynk",
+    "authors": {
+        "name": "Daniel Rufus Kaldheim",
+        "url": "https://github.com/danielkaldheim",
+        "maintainer": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danielkaldheim/CrudusConnect.git"
+    },
+    "homepage": "https://crudus.no",
+    "frameworks": "arduino",
+    "platforms": "espressif8266",
+    "dependencies": {
+        "Blynk": "https://github.com/blynkkk/blynk-library.git"
+    }
+}

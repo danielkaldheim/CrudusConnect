@@ -17,6 +17,11 @@ uint16_t port = 8442;
 uint16_t tries = 0;
 uint16_t wifiTries = 0;
 
+void restart();
+void reconnectBlynk();
+void update();
+void connect();
+
 void connect()
 {
     tries = 0;
@@ -60,7 +65,7 @@ void connect()
         wifiTries++;
         if (wifiTries >= 3)
         {
-            ESP.reset();
+            restart();
         }
     }
 }
@@ -80,6 +85,7 @@ void reconnectBlynk()
             if (tries >= 3)
             {
                 connect();
+                delay(1000);
             }
         }
     }
